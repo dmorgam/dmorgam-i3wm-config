@@ -183,6 +183,12 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+
+#---------------- Gnome Polkit ------------ ---------------------------------------------
+
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+
 #---------------- Left Handed Mouse Pointer ---------------------------------------------
 
 exec --no-startup-id xmodmap -e "pointer = 3 2 1 "
