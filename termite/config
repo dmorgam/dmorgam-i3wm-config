@@ -1,5 +1,9 @@
 [options]
-font = Droid Sans Mono 11
+font = DejaVu Sans Mono 11
+allow_bold = true
+clickable_url = true
+scrollback_lines = 2000
+visible_bell = true
 
 [colors]
 foreground = #ffffff
