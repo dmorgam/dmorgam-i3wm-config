@@ -218,6 +218,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 #---------------- Lanzamiento compositor manager panel, nm-applet etc... ----------------
 
+exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id compton
 exec --no-startup-id volumeicon
 exec --no-startup-id pamac-tray
