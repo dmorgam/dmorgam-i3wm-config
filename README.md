@@ -5,4 +5,5 @@ Folders are from .config directory
 Files:
  + i3/config
  + dunst/config
+ + termite/config
 
