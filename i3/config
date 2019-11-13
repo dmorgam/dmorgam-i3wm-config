@@ -243,5 +243,6 @@ bar {
            inactive_workspace #C3C3C3 #C3C3C3 #333333
            urgent_workspace #DC143C #DC143C #333333
         }
+        bindsym button3 --release exec i3-dmenu-desktop --dmenu='dmenu -h 28 -w 400 -y 30 -x 2 -l 20 -nb '#222222' -nf '#ffffff' -sb '#1E90FF' -sf '#222222' -p Menu: -fn 'NotoMonoRegular:bold:pixelsize=14''
 
 }
