@@ -234,7 +234,7 @@ bar {
         font pango: Noto Sans, FontAwesome 13
         status_command i3status -c ~/.config/i3/i3status.cfg 
         position top
-	separator_symbol "«"
+	separator_symbol "|"
         colors {
            separator #555555
            background #222222
