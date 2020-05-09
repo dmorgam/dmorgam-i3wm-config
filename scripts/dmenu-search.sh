@@ -1,8 +1,8 @@
 #!/bin/sh
 
-OPCIONES="Man\nArch-wiki\nGoogle\nYouTube\nWikipedia\nDuckDuckgo"
+OPCIONES="Man\nArch-wiki\nGoogle\nYouTube\nWikipedia\nGMaps\nDuckDuckgo"
 
-DMENUOPTS="-h 29 -nb #222 -nf #fff -sb #cddc39 -sf #222 -b -fn NotoMonoRegular:bold:pixelsize=17 -w 1100 -x 100 -y 10"
+DMENUOPTS="-h 29 -nb #222 -nf #fff -sb #cddc39 -sf #222 -b -fn NotoMonoRegular:bold:pixelsize=17 -w 1100 -x 130 -y 10"
 
 CHOICE=$(echo -e $OPCIONES | dmenu $DMENUOPTS -p 'Busqueda:' )
 
@@ -21,6 +21,9 @@ case $CHOICE in
 	  ;;
 	Wikipedia)
 	  surf "https://es.wikipedia.org/w/index.php?search=$(echo '' | dmenu $DMENUOPTS -p 'Wikipedia:')"
+	  ;;	
+	GMaps)
+	  surf "https://www.google.cl/maps/search/$(echo '' | dmenu $DMENUOPTS -p 'Google Maps:')"
 	  ;;	
 	DuckDuckgo)
 	  surf "https://duckduckgo.com/?q=$(echo '' | dmenu $DMENUOPTS -p 'DuckDuckgo:')"
