@@ -8,3 +8,4 @@ Files:
  + dunst/config
  + termite/config
 
+Move scripts directory to .scripts
