@@ -8,7 +8,7 @@ CHOICE=$(echo -e $OPCIONES | dmenu $DMENUOPTS -p 'Busqueda:' )
 
 case $CHOICE in
 	Man)
-	  BROWSER=surf man --html $(find /usr/share/man/man1/ -type f | awk -F '/' '/1/ {print $6}' | sed 's/.1.gz//g' | dmenu $DMENUOPTS -p 'Man:')
+	  BROWSER=surf man --html $(find /usr/share/man/man1/ -type f | awk -F '/' '/1/ {print $6}' | awk -F '.' '/1/ {print $1}' | dmenu $DMENUOPTS -p 'Man:')
 	  ;;
 	Arch-wiki)
 	  surf "https://wiki.archlinux.org/index.php?search=$(echo '' | dmenu $DMENUOPTS -p 'Arch Wiki:')"
