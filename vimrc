@@ -18,4 +18,6 @@ set showcmd
 
 colo monokai
 
+syntax on
 
+let g:NERDTreeNodeDelimiter = "\u00a0"
